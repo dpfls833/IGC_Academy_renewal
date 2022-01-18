@@ -64,6 +64,11 @@ table{
     -moz-tab-size: 4;
     tab-size: 4
 }
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
 
 /* Container Setting */
 .container{
@@ -75,7 +80,7 @@ table{
     gap: 3rem;
 }
 .main_sec{
-    padding: 6rem 0;
+    padding: 6rem 0 8rem;
 }
 
 /* Font System */
