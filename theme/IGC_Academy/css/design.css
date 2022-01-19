@@ -30,12 +30,15 @@
 /* Main_visual Area */
 .main_visual{width: 100%;height: auto; position: relative;margin: auto;}
 .main_visual .roll_wrap{grid-column: 1 / 13;width:100%;}
+
 .main_visual .roll_wrap .roll{display: none}
 .main_visual .roll_wrap .roll_txt{grid-column: 1 / 13;position:absolute; top:40px;color:#fff;}
 .main_visual .roll_wrap .roll_txt_2{grid-column: 1 / 13;position:absolute; top:80px;left:58%;color:#fff;}
 .main_visual .roll_wrap .roll_txt h2, .main_visual .roll_wrap .roll_txt_2 h2{font-size:5rem;letter-spacing: 0.2rem;margin-bottom:10px;}
 .main_visual .roll_wrap .roll_txt p, .main_visual .roll_wrap .roll_txt_2 p{font-size:2rem;line-height:3.4rem;}
-.main_visual .roll_wrap .img_txt{grid-column: 1 / 13;position:absolute; bottom:60px; left:44%;text-align:center;font-size:2rem;line-height:3.4rem;color:#fff;}
+
+.main_visual .roll_wrap .img_txt{grid-column: 1 / 13;position:absolute; bottom:60px; left:43.5%;text-align:center;}
+.main_visual .roll_wrap .img_txt p{font-size:2rem;line-height:3.4rem;color:#fff;}
 .main_visual .roll_wrap .btn_enrolment{margin-top:30px;width:120px; height:50px;background:#41a3fb;line-height:50px;border-radius: 4px;text-align:center;}
 img {vertical-align: middle; width:100%;}
 
@@ -103,9 +106,13 @@ img {vertical-align: middle; width:100%;}
 
 /* Main_LMS Area */
 .main_LMS{height: auto;}
-.main_LMS ul li{grid-column: span 3;text-align: center;}
-.main_LMS ul li h5{padding: 2rem 0;}
+.main_LMS ul.container{gap:0rem;} /* 중앙정렬이 안되서 예외적으로 gap 삭제 */
+.main_LMS ul li{grid-column: span 3;text-align: center;position:relative;}
+.main_LMS ul li::before{content: "";display: block;width: 1px;height:60%;background: #bebebe;position: absolute;left: 0;top: 58%;transform: translateY(-50%);}
+.main_LMS ul li:last-child::after{content: "";display: block;width: 1px;height:60%;background: #bebebe;position: absolute;right: 0;top: 58%;transform: translateY(-50%);}
 
+.main_LMS ul li h5{padding: 2rem 0;}
+.main_LMS ul li i{color: #3b95f3/*#149ae9*/; margin:1rem 0;}
 
 /* Main_service Area */
 .main_service{background-color: #f6f7fb;height: auto;}
@@ -136,17 +143,26 @@ img {vertical-align: middle; width:100%;}
 
 
 /* Main_forum Area */
-.main_forum{background-color: #efeff0;height: auto;}
+.main_forum{background-color: #f2f7fa;height: auto;}
 .main_forum .con_tit h3{margin: 0 0 6rem;}
-.main_forum .con_wrap{width: 100%;max-width: 1350px;margin: 0 auto;}
-.main_forum .con_wrap li{float: left;width: calc(100% / 5 - 24px);margin: 0 15px;background-color: #fff;text-align: center;border-top: 4px solid;border-image: linear-gradient(-45deg,#3ad8d8 0,#36bdf2 100%);border-image-slice: 1;}
-.main_forum .con_wrap li:nth-child(1){margin: 0 15px 0 0;}
-.main_forum .con_wrap li:nth-child(5){margin: 0 0 0 15px;}
+.main_forum .con_wrap{width: 100%;max-width: 1350px;margin: 0 auto;position:relative;}
+.main_forum .con_wrap li:nth-child(odd){float: left;width: calc(100% / 5 - 24px);margin: 0 15px;background-color: #fff;text-align: center;border-top: 3px solid;border-image: linear-gradient(270deg,#3ad8d8 0,#3191e8 100%);border-image-slice: 1;border-bottom:1px solid;}
+.main_forum .con_wrap li:first-child{margin: 0 15px 0 0;}
+.main_forum .con_wrap li:last-child{margin: 0 0 0 15px;}
 
-.main_forum .con_wrap li .icon_box{width: 100px;height: 100px;background-color: #419aea;border-radius: 50%;margin: 40px auto;}
-.main_forum .con_wrap li .icon_box span{line-height: 100px;color: #fff;}
+.main_forum .con_wrap li:nth-child(2n){position:absolute;top:30%;left:17.5%;}
+.main_forum .con_wrap li:nth-child(4){left:38%;}
+.main_forum .con_wrap li:nth-child(6){left:58.5%;}
+.main_forum .con_wrap li:nth-child(8){left:79%;}
+
+.main_forum .con_wrap li .icon_box{width: 100px;height: 100px;background-color: #f5f5f5;border-radius: 50%;margin: 40px auto;}
+.main_forum .con_wrap li .icon_box i{line-height: 100px;color: #0774d3;}
 
 .main_forum .con_wrap li .icon_tit{margin: 0 0 4rem;}
+
+.main_forum .con_wrap li .arrow_right{width:5rem;height:5rem;background:#fff;border-radius: 50%;text-align: center;box-shadow: 0 2px 8px 0 rgba(25,25,25,0.12);}
+.main_forum .con_wrap li .arrow_right i{line-height:5rem;font-size:4.2rem;color:#bbb;}
+
 
 
 /* Footer Area */
