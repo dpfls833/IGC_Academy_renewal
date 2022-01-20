@@ -6,7 +6,7 @@
 .top_util .fontsizer{grid-column: 11 / 13;text-align: right;}
 
 .header{width: 100%;height:142px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.2);z-index:201;overflow: hidden;position: fixed;top:44px}/* 상단 유틸리티 높이값(44px) 제외하고 Position Fixed */
-.header:hover{height:420px;max-height: 420px;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);}/* 헤더영역 마우스오버시 이벤트 : 헤더영역 높이값 변경 */
+.header:hover{height:380px;max-height: 380px;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);}/* 헤더영역 마우스오버시 이벤트 : 헤더영역 높이값 변경 */
 
 .header .main_gnb{padding: 2rem 0;}/* 헤더영역 상하 여백 설정 */
 
@@ -31,9 +31,8 @@
 .header .main_gnb .logo_gpc a{display: block;overflow: hidden}
 .header .main_gnb .logo_gpc img{width: 142px;height: 102px;}
 
-
 /* Main_visual Area */
-.main_visual{width: 100%;height: auto; position: relative;top: 0;margin: 186px auto 0;}/* 헤더영역 높이값(상단 유틸리티:44px/헤더:142px) 제외 : margin 처리 */
+.main_visual{height: auto;position: relative;}
 .main_visual .roll_wrap{grid-column: 1 / 13;width:100%;}
 .main_visual .roll_wrap .roll{display: none}
 .main_visual .roll_wrap .roll_txt{grid-column: 1 / 13;position:absolute; top:40px;color:#fff;}/* 메인비주얼01 텍스트 위치(상단 좌측) */
@@ -142,6 +141,7 @@ img {vertical-align: middle; width:100%;}
 
 /* Main_forum Area */
 .main_forum{background-color: #efeff0;height: auto;}
+.main_forum .bg{background-image: url(/theme/IGC_Academy/img/main_forum_bg.jpg);}
 .main_forum .con_tit h3{margin: 0 0 6rem;}
 .main_forum .con_wrap{width: 100%;max-width: 1350px;margin: 0 auto;}
 .main_forum .con_wrap li{float: left;width: calc(100% / 5 - 24px);margin: 0 15px;background-color: #fff;text-align: center;border-top: 4px solid;border-image: linear-gradient(-45deg,#3ad8d8 0,#36bdf2 100%);border-image-slice: 1;}
@@ -178,3 +178,8 @@ img {vertical-align: middle; width:100%;}
 
 .footer .policy .IGC_address{grid-column: 1 / 13;}
 .footer .policy .copy{grid-column: 1 / 13;}
+
+
+/* Top Button */
+#btn_top{display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;font-size: 18px;border: none;outline: none;background-color: #c9341c;color: white;cursor: pointer;padding: 15px;border-radius: 4px;}
+#btn_top:hover{opacity: 0.75}

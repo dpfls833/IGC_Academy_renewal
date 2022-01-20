@@ -72,6 +72,11 @@ table{
 }
 
 /* Container Setting */
+.contents{
+    width: 100%;
+    height: auto;
+    margin: 186px auto 0;/* 헤더영역 높이값(상단 유틸리티:44px/헤더:142px) 제외: margin 처리 */
+}
 .container{
     max-width: 1350px;
     margin: 0 auto;

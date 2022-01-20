@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="theme/IGC_Academy/css/default.css">
     <link rel="stylesheet" href="theme/IGC_Academy/css/design.css">
     <link rel="stylesheet" href="theme/IGC_Academy/css/responsive.css">
-    <script src="theme/IGC_Academy/js/script.js"></script>
     <script src="theme/IGC_Academy/js/design.js"></script>
+    <script src="theme/IGC_Academy/js/script.js"></script>
     <!-- Fontawesome 연결 -->
     <script src="https://kit.fontawesome.com/6968672a33.js" crossorigin="anonymous"></script>
 </head>
@@ -210,9 +210,12 @@
             </ul>
         </div>
     </div>
+    <button onclick="topFunction()" id="btn_top" title="Go to top">Top</button>
     <footer w3-include-html="tail.html"></footer>
 </body>
+<!-- script.js -->
 <script>
+    window.onscroll = function() {scrollFunction()};
     includeHTML();
 </script>
 </html>
