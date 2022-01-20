@@ -5,35 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGC Academy</title>
-    <script src="/theme/IGC_Academy/js/script.js"></script>
-    <script src="/theme/IGC_Academy/js/design.js"></script>
-    <link rel="stylesheet" href="/theme/IGC_Academy/css/default.css">
-    <link rel="stylesheet" href="/theme/IGC_Academy/css/design.css">
+    <!-- CSS/Javascript 연결 -->
+    <link rel="stylesheet" href="theme/IGC_Academy/css/default.css">
+    <link rel="stylesheet" href="theme/IGC_Academy/css/design.css">
+    <link rel="stylesheet" href="theme/IGC_Academy/css/responsive.css">
+    <script src="theme/IGC_Academy/js/script.js"></script>
+    <script src="theme/IGC_Academy/js/design.js"></script>
+    <!-- Fontawesome 연결 -->
+    <script src="https://kit.fontawesome.com/6968672a33.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header w3-include-html="head.html"></header>
     <div class="contents">
         <div class="main_visual">
-            <div class="slider">
-                <div class="roll roll01">
-                    <div class="container">
-                        <div class="roll_wrap">
+            <div class="roll_wrap">
+                <div class="roll fadein">
+                    <img src="theme/IGC_Academy/img/main_visual_img01.png" alt="igc_academy_mv_img1">
+                    <ul class="container">
+                        <li class="roll_txt">
                             <h2>GPC</h2>
-                            <p>GPC는 IAF Association member인 IPC와 심사자격 인증 및 연수기관 지정에 대하여 MLA를 체결한 개인인증기관입니다.</p>
+                            <p>GPC는 IAF Association member인 IPC와 심사자격 인증 및 연수기관 지정에 대하여<br>MLA를 체결한 개인인증기관입니다.</p>
+                        </li>
+                        <li class="img_txt">
                             <p>IPC BoD meeting & AGM</p>
                             <p>on 28 ~ 29th Oct</p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="roll roll02">
-                    <div class="container">
-                        <div class="roll_wrap">
+            </div>
+            <div class="roll_wrap">
+                <div class="roll fadein">
+                    <img src="theme/IGC_Academy/img/main_visual_img02.png" alt="igc_academy_mv_img1">
+                    <ul class="container">
+                        <li class="roll_txt_2">
                             <h2>IGC Academy</h2>
-                            <p>IGC Academy는 국제 개인인증기관 GPC로부터 지정 받은 ISO 인증심사원 연수기관입니다.</p>
-                            <a href="#" class="btn_enrolment"><p>수강신청</p></a>
-                        </div>
-                    </div>
+                            <p>IGC Academy는 국제 개인인증기관 GPC로부터 지정 받은 <br>ISO 인증심사원 연수기관입니다.</p>
+                            <div class="btn_enrolment"><a href="#">수강신청</a></div>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+            <div class="arrow">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="bottom_bar">
+                <span class="line" onclick="currentSlide(1)"></span>
+                <span class="line" onclick="currentSlide(2)"></span>
             </div>
         </div>
         <div class="main_sec main_LMS">
@@ -58,7 +76,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <div class="icon">icon</div>
+                        <i class="fas fa-chart-line"></i>
                         <h5>맞춤형 학습 시스템 관리</h5>
                         <p>개인별 질의응답 및 피드백 제공을<br> 통한 1:1 맞춤형 학습 관리</p>
                     </a>
@@ -80,7 +98,7 @@
             </div>
             <div class="container">
                 <div class="con_img">
-                    <img src="/theme/IGC_Academy/img/services_img1.png" alt="공통 교육 과정 이미지">
+                    <img src="theme/IGC_Academy/img/main_service_img01.png" alt="공통 교육 과정 이미지">
                 </div>
                 <div class="con_txt">
                     <div class="txt_wrap">
@@ -95,7 +113,7 @@
                     </div>
                 </div>
                 <div class="con_img right">
-                    <img src="/theme/IGC_Academy/img/services_img2.png" alt="정규 교육 과정 이미지">
+                    <img src="theme/IGC_Academy/img/main_service_img02.png" alt="정규 교육 과정 이미지">
                 </div>
                 <div class="con_txt right">
                     <div class="txt_wrap">
@@ -110,7 +128,7 @@
                     </div>
                 </div>
                 <div class="con_img">
-                    <img src="/theme/IGC_Academy/img/services_img3.png" alt="자격 확대 교육 과정 이미지">
+                    <img src="theme/IGC_Academy/img/main_service_img03.png" alt="자격 확대 교육 과정 이미지">
                 </div>
                 <div class="con_txt">
                     <div class="txt_wrap">
@@ -132,21 +150,21 @@
             <ul class="container">
                 <li>
                     <h5>01 국제 개인인증기관</h5>
-                    <a href="#" class="con_img"><img src="/theme/IGC_Academy/img/competitiveness_img1.png" alt="국제 개인인증기관 이미지"></a>
+                    <a href="#" class="con_img"><img src="theme/IGC_Academy/img/main_about_img01.png" alt="국제 개인인증기관 이미지"></a>
                     <p>
                         GPC 인증원은 IAF (International Accreditation Forum)와 MLA를 체결한 미국 인정기구 IAS (International Accreditation Service)로부터 국제 표준 ISO/IEC 17024에 기반하여 인정을 취득한 개인인증기관입니다.
                     </p>
                 </li>
                 <li>
                     <h5>02 IPC MLA 체결</h5>
-                    <a href="#" class="con_img"><img src="/theme/IGC_Academy/img/competitiveness_img2.png" alt="IPC MLA 체결 이미지"></a>
+                    <a href="#" class="con_img"><img src="theme/IGC_Academy/img/main_about_img02.png" alt="IPC MLA 체결 이미지"></a>
                     <p>
                         IAF를 구성하는 Association member 인 IPC(International Personnel Certification Association)와 개인인증 및 교육훈련 기관 지정에 대하여 MLA를 체결함으로써 국제적으로 공신력 있는개인인증 및 교육 서비스를 제공하고 있습니다.
                     </p>
                 </li>
                 <li>
                     <h5>03 IPC 회장 선임</h5>
-                    <a href="#" class="con_img"><img src="/theme/IGC_Academy/img/competitiveness_img3.png" alt="IPC 회장 선임 이미지"></a>
+                    <a href="#" class="con_img"><img src="theme/IGC_Academy/img/main_about_img03.png" alt="IPC 회장 선임 이미지"></a>
                     <p>
                         GPC의 원장 공 길택 박사는 지난 2019년 10월, 제 23차 IPCAnnual Meeting에서 IPC 회장으로 선임되었습니다. IPC 이사회 임원으로서, 개인인증 및 연수기관 지정에 대한 스킴을 개발하여 전문 인력 인증의 발전에 기여하고 있습니다.
                     </p>
@@ -167,7 +185,7 @@
                 </li>
                 <li>
                     <div class="icon_box">
-                        <span>icon</span>
+                        <i class="fas fa-book"></i>
                     </div>
                     <h5 class="icon_tit">교육과정 수강신청</h5>
                 </li>
@@ -179,13 +197,13 @@
                 </li>
                 <li>
                     <div class="icon_box">
-                        <span>icon</span>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h5 class="icon_tit">교육수료</h5>
                 </li>
                 <li>
                     <div class="icon_box">
-                        <span>icon</span>
+                        <i class="fas fa-pencil-alt"></i>
                     </div>
                     <h5 class="icon_tit">최종시험</h5>
                 </li>

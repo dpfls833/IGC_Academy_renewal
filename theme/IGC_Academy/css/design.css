@@ -1,37 +1,109 @@
 @charset "utf-8";
 
 /* Header Area */
-.header{grid-column: 1 / 13;}
+.top_util{position: fixed;top: 0;width: 100%;height: 44px;line-height: 44px;background:#fff;border-bottom: 1px solid rgba(0,0,0,0.2);z-index: 202;}/* 헤더영역 상단 유틸리티 */
+.top_util .contact{grid-column: 8 / 11;}
+.top_util .fontsizer{grid-column: 11 / 13;text-align: right;}
 
-.header .top_util .contact{grid-column: 8 / 11;}
-.header .top_util .fontsizer{grid-column: 11 / 13;text-align: right;}
+.header{width: 100%;height:142px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.2);z-index:201;overflow: hidden;position: fixed;top:44px}/* 상단 유틸리티 높이값(44px) 제외하고 Position Fixed */
+.header:hover{height:420px;max-height: 420px;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);}/* 헤더영역 마우스오버시 이벤트 : 헤더영역 높이값 변경 */
 
-.header .main_gnb{padding: 2rem 0;}
-.header .main_gnb .logo{grid-column: 1 / 3;width: 156px;height: 102px;background-color: #fff;text-align: center;}
+.header .main_gnb{padding: 2rem 0;}/* 헤더영역 상하 여백 설정 */
+
+.header .main_gnb .logo{grid-column: 1 / 3;width: 156px;height: 102px;background-color: #fff;text-align: center;}/* 메인 Logo */
 .header .main_gnb .logo a{display: block;overflow: hidden}
 .header .main_gnb .logo img{width: 156px;height: 102px;}
 
-.header .main_gnb .gnb{grid-column: 3 / 10;}
-.header .main_gnb .gnb ul{line-height: 102px;}
-.header .main_gnb .gnb .depth1{position: relative;float: left;width: calc(100% / 3);padding: 0 20px;}
-.header .main_gnb .gnb .depth1 a{display: inline-block;height: 45px;line-height: 45px;font-size: 2rem;font-weight: 500;}
-.header .main_gnb .gnb .depth1 ul{overflow: hidden;margin: 2rem 0;display: none;}
+.header .main_gnb .gnb{grid-column: 3 / 10;}/* 메인 GNB */
+.header .main_gnb .gnb ul{line-height: 102px;}/* 메인로고(102px)와 높이 정렬 */
+.header .main_gnb .gnb .depth1{position: relative;float: left;width: calc(100% / 3);}
+.header .main_gnb .gnb .depth1 a{display: inline-block;font-size: 2rem;font-weight: 500;color: rgba(3,3,3,0.7)}
+.header .main_gnb .gnb .depth1 > a:hover{color: #000;}/* 1Depth 마우스오버시 이벤트 */
+.header .main_gnb .gnb .depth1 ul{opacity: 0;position: absolute;left: 0;top: 102px;margin: 2rem 0;;overflow: hidden;}/* 헤더영역 2Depth */
+.header:hover .main_gnb .gnb .depth1 ul{opacity: 1;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06)}/* 헤더영역 마우스오버시 이벤트 : 2Depth 나타남 */
 .header .main_gnb .gnb .depth2 a{display: block;font-size: 1.8rem;font-weight: 400;line-height: 1.4;padding: 6px 0;}
 
-.header .main_gnb .util{grid-column: 10 / 12;}
-.header .main_gnb .util ul{line-height: 102px;}
+.header .main_gnb .util{grid-column: 10 / 12;}/* 메인 유틸리티(영문페이지 바로가기/검색/로그인 버튼) */
+.header .main_gnb .util ul{line-height: 102px;}/* 메인로고(102px)와 높이 정렬 */
 .header .main_gnb .util ul li{float: left;}
 
-.header .main_gnb .logo_gpc{width: 142px;height: 102px;}
+.header .main_gnb .logo_gpc{width: 142px;height: 102px;}/* GPC Logo */
 .header .main_gnb .logo_gpc a{display: block;overflow: hidden}
 .header .main_gnb .logo_gpc img{width: 142px;height: 102px;}
 
 
 /* Main_visual Area */
-.main_visual{width: 100%;height: 600px;overflow: hidden;}
-.main_visual .roll01{background: url(/theme/IGC_Academy/img/main_visual_img1.png)no-repeat;background-size: cover;height: 600px;}
-.main_visual .roll02{background: url(/theme/IGC_Academy/img/main_visual_img2.png)no-repeat;background-size: cover;height: 600px;}
-.main_visual .roll_wrap{grid-column: 1 / 13;}
+.main_visual{width: 100%;height: auto; position: relative;top: 0;margin: 186px auto 0;}/* 헤더영역 높이값(상단 유틸리티:44px/헤더:142px) 제외 : margin 처리 */
+.main_visual .roll_wrap{grid-column: 1 / 13;width:100%;}
+.main_visual .roll_wrap .roll{display: none}
+.main_visual .roll_wrap .roll_txt{grid-column: 1 / 13;position:absolute; top:40px;color:#fff;}/* 메인비주얼01 텍스트 위치(상단 좌측) */
+.main_visual .roll_wrap .roll_txt_2{grid-column: 1 / 13;position:absolute; top:80px;left:58%;color:#fff;}/* 메인비주얼02 텍스트 위치(상단 우측) */
+.main_visual .roll_wrap .roll_txt h2, .main_visual .roll_wrap .roll_txt_2 h2{font-size:5rem;letter-spacing: 0.2rem;margin-bottom:10px;}
+.main_visual .roll_wrap .roll_txt p, .main_visual .roll_wrap .roll_txt_2 p{font-size:2rem;line-height:3.4rem;}
+.main_visual .roll_wrap .img_txt{grid-column: 1 / 13;position:absolute; bottom:60px; left:44%;text-align:center;font-size:2rem;line-height:3.4rem;color:#fff;}/* 메인비주얼01 텍스트 위치(하단 중앙) */
+.main_visual .roll_wrap .btn_enrolment{margin-top:30px;width:120px; height:50px;background:#41a3fb;line-height:50px;border-radius: 4px;text-align:center;}
+img {vertical-align: middle; width:100%;}
+
+/* Main_visual Area - Next & previous buttons */
+.main_visual .prev, .main_visual .next {
+    position:absolute;
+    z-index:200;
+    box-sizing:border-box;
+    top:50%;
+    transform:translateY(-50%);
+    padding:2.3rem 1.8rem 2.5rem 1.8rem;
+    background-color:rgba(255,255,255,0.2);
+    font-size:2.5rem;
+    color:#fff;
+    cursor:pointer;
+    opacity:0;
+    transition: all .3s ease-in-out;
+}
+.main_visual .next {right: 0;}
+.main_visual:hover .prev, .main_visual:hover .next {opacity:1;}
+
+/* Main_visual Area - Bottom bar */
+.bottom_bar{
+    position:absolute;
+    top:92%;
+    left:45.2%;
+    text-align:center;
+}
+.line {
+    cursor: pointer;
+    width:4rem;
+    height:0.8rem;
+    margin: 0 0.2rem;
+    background-color: transparent;
+    border:1px solid #fff;
+    display: inline-block;
+    transition:width 0.3s;
+    transition:0.2s ease;
+}
+.line:hover {background-color: #fff;}
+.active, .active:hover{
+    width:12rem;
+    background-color: #fff;
+}
+
+/* Main_visual Area - Fade in 효과 */
+.fadein {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 2s;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fadein {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+@keyframes fadein {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
 
 
 /* Main_LMS Area */
