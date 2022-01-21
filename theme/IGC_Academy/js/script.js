@@ -25,4 +25,21 @@ function includeHTML() {
         return;
       }
     }
+  };
+
+
+// 스크롤값에 따라 TOP 버튼 생성
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("btn_top").style.display = "block";
+  } else {
+    document.getElementById("btn_top").style.display = "none";
   }
+};
+
+// TOP 버튼 클릭시 도큐먼트 최상단으로 위치 이동
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+

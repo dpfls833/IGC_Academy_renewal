@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGC Academy</title>
+    <!-- CSS/Javascript 연결 -->
     <link rel="stylesheet" href="theme/IGC_Academy/css/default.css">
-    <link rel="stylesheet" href="theme/IGC_Academy/css/design.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="theme/IGC_Academy/js/script.js"></script>
     <script src="theme/IGC_Academy/js/design.js"></script>
+    <script src="theme/IGC_Academy/js/script.js"></script>
+    <!-- Fontawesome 연결 -->
     <script src="https://kit.fontawesome.com/6968672a33.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -220,9 +220,12 @@
             </ul>
         </div>
     </div>
+    <button onclick="topFunction()" id="btn_top" title="Go to top">Top</button>
     <footer w3-include-html="tail.html"></footer>
 </body>
+<!-- script.js -->
 <script>
+    window.onscroll = function() {scrollFunction()};
     includeHTML();
 </script>
 </html>
