@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 /* Header Area */
-.top_util{position: fixed;top: 0;width: 100%;height: 44px;line-height: 44px;background:#fff;border-bottom: 1px solid rgba(0,0,0,0.2);z-index: 202;}/* 헤더영역 상단 유틸리티 */
+.top_util{position: fixed;top: 0;width: 100%;height:auto;line-height: 44px;background:#fff;border-bottom: 1px solid rgba(0,0,0,0.2);z-index: 202;}/* 헤더영역 상단 유틸리티 */
+.top_util .container{gap:0;}
 .top_util .contact{grid-column: 8 / 11;width:100%;background:#41a3fb;padding:0.9rem 1rem;color:#fff}
 .top_util .contact li{display:inline-block;}
 .top_util .contact li:last-child{margin-left:6px}
