@@ -127,7 +127,7 @@ p, a{
 }
 
 /* Icon */
-.header .top_util .material-icons{
+.top_util .material-icons{
     font-size:2rem;
     vertical-align:middle;
 }
@@ -138,4 +138,4 @@ p, a{
 
 .main_sec .fa, .main_sec .fas, .main_sec .material-icons {font-size: 5rem;}
 
-.footer .fab{font-size: 1.6rem;}
+.footer .fab{font-size: 2rem;}
