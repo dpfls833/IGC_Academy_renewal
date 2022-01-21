@@ -1,63 +1,72 @@
 @charset "utf-8";
 
 /* Header Area */
-.top_util{position: fixed;top: 0;width: 100%;height:auto;line-height: 44px;background:#fff;border-bottom: 1px solid rgba(0,0,0,0.2);z-index: 202;}/* 헤더영역 상단 유틸리티 */
+.top_util{position: fixed;top: 0;width: 100%;height: auto;line-height: 44px;background:#fff;border-bottom: 1px solid rgba(0,0,0,0.2);z-index: 202;}/* 헤더영역 상단 유틸리티 */
 .top_util .container{gap:0;}
-.top_util .contact{grid-column: 8 / 11;width:100%;background:#41a3fb;padding:0.9rem 1rem;color:#fff}
-.top_util .contact li{display:inline-block;}
-.top_util .contact li:last-child{margin-left:6px}
-.top_util .fontsizer{grid-column: 11 / 13;text-align: right;background:#f5f5f5;padding:0.3rem 1rem 0.9rem;color:#01427a;font-weight:500;text-align:center;}
-.top_util .fontsizer a{display:inline-block;margin:0 4px;}
-.top_util .fontsizer a.medium_A{font-size:1.7rem;}
+.top_util .contact{grid-column: 7 / 11;margin: 0 0 0 4rem;background:#4196ef;color:#fff}
+.top_util .contact li{display:inline-block;margin: 0 2.4rem;}
+.top_util .contact li i{vertical-align: middle;}
+.top_util .contact li:last-child{margin-left:1.3rem}
+.top_util .contact li a{color:#fff}
+
+.top_util .fontsizer{grid-column: 11 / 13;background:#f5f5f5;text-align:center;margin: 0 0 0 1.6rem;}
+.top_util .fontsizer a{display:inline-block;margin:0 0.4rem;color:#4196ef;font-weight:500;}
+.top_util .fontsizer a:hover{color:#0d4f9d}
+.top_util .fontsizer a.medium_A{font-size:1.8rem;}
 .top_util .fontsizer a.large_A{font-size:2rem;}
 
-.header{width: 100%;height:142px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.2);z-index:201;overflow: hidden;position: fixed;top:44px}/* 상단 유틸리티 높이값(44px) 제외하고 Position Fixed */
-.header:hover{height:380px;max-height: 380px;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);}/* 헤더영역 마우스오버시 이벤트 : 헤더영역 높이값 변경 */
+.header{width: 100%;height:120px;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,0.16);z-index:201;overflow: hidden;position: fixed;top:46px}/* 상단 유틸리티 높이값(46px) 제외하고 Position Fixed */
+.header:hover{height:360px;max-height: 360px;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);}/* 헤더영역 마우스오버시 이벤트 : 헤더영역 높이값 변경 */
 
 .header .main_gnb{padding: 2rem 0;}/* 헤더영역 상하 여백 설정 */
 
-.header .main_gnb .logo{grid-column: 1 / 3;width: 156px;height: 102px;background-color: #fff;text-align: center;}/* 메인 Logo */
-.header .main_gnb .logo a{display: block;overflow: hidden}
-.header .main_gnb .logo img{width: 156px;height: 102px;}
+.header .main_gnb .logo{width: 123px;height: 80px;}/* 메인 Logo */
+.header .main_gnb .logo a{display: block;width: 100%;height: 100%;overflow: hidden}
+.header .main_gnb .logo img{width: 100%;height: 100%;}
 
-.header .main_gnb .gnb{grid-column: 3 / 10;}/* 메인 GNB */
-.header .main_gnb .gnb ul{line-height: 102px;}/* 메인로고(102px)와 높이 정렬 */
+.header .main_gnb .gnb{grid-column: 3 / 9;}/* 메인 GNB */
+.header .main_gnb .gnb ul{line-height: 80px;}/* 메인로고(80px)와 높이 정렬 */
 .header .main_gnb .gnb .depth1{position: relative;float: left;width: calc(100% / 3);}
-.header .main_gnb .gnb .depth1 a{display: inline-block;font-size: 2rem;font-weight: 500;color: rgba(3,3,3,0.7)}
+.header .main_gnb .gnb .depth1 a{display: inline-block;font-size: 2.2rem;font-weight: 500;color: rgba(2,2,2,0.7)}
 .header .main_gnb .gnb .depth1 > a:hover{color: #000;}/* 1Depth 마우스오버시 이벤트 */
-.header .main_gnb .gnb .depth1 ul{opacity: 0;position: absolute;left: 0;top: 102px;margin: 2rem 0;;overflow: hidden;}/* 헤더영역 2Depth */
+.header .main_gnb .gnb .depth1 ul{opacity: 0;position: absolute;left: 0;top: 100px;overflow: hidden;}/* 헤더영역 2Depth */
 .header:hover .main_gnb .gnb .depth1 ul{opacity: 1;transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06)}/* 헤더영역 마우스오버시 이벤트 : 2Depth 나타남 */
-.header .main_gnb .gnb .depth2 a{display: block;font-size: 1.8rem;font-weight: 400;line-height: 1.4;padding: 6px 0;}
+.header .main_gnb .gnb .depth2 a{display: block;font-size: 1.8rem;font-weight: 400;line-height: 1.4;padding: 0.6rem 0;}
+.header .main_gnb .gnb .depth2 a:hover{color: #0d4f9d;}
 
-.header .main_gnb .util{grid-column: 10 / 12;}/* 메인 유틸리티(영문페이지 바로가기/검색/로그인 버튼) */
-.header .main_gnb .util ul{line-height: 96px;}/* 메인로고(102px)와 높이 정렬 */
+.header .main_gnb .util{grid-column: 9 / 12;}/* 메인 유틸리티(영문페이지 바로가기/검색/로그인 버튼) */
+.header .main_gnb .util ul{line-height: 80px;}/* 메인로고(80px)와 높이 정렬 */
 .header .main_gnb .util ul li{float: left;position:relative;margin-right:7px;color:#0d4f9d}
 .header .main_gnb .util ul li:not(:first-child){margin:0 7px;}
 
 .header .main_gnb .util ul li a{transition: all .2s ease-in-out}
-.header .main_gnb .util ul li:last-child a{display:inline-block;vertical-align:middle;font-size:1.3rem;color:#999}
+.header .main_gnb .util ul li:last-child a{display:inline-block;vertical-align:middle;color:#999}
 .header .main_gnb .util ul li a.btn_kor{margin-right:6px;color:#0d4f9d;font-weight:500;}
 .header .main_gnb .util ul li a.btn_kor::before{content: "";position: absolute;left: 62%;top: 51%;width: 1px;height: 11px;background: #bbb;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
 .header .main_gnb .util ul li a.btn_eng{margin-left:6px;}
 .header .main_gnb .util ul li a:not(.btn_kor):hover{color:#cd201f;}
 
-.header .main_gnb .logo_gpc{width: 142px;height: 102px;}/* GPC Logo */
-.header .main_gnb .logo_gpc a{display: block;overflow: hidden}
-.header .main_gnb .logo_gpc img{width: 142px;height: 102px;}
+.header .main_gnb .logo.gpc{width: 109px;height: 80px;}/* GPC Logo */
+
+
+
+
+
 
 /* Main_visual Area */
-.main_visual{width: 100%;height: auto; position: relative;margin: auto;}
-.main_visual .roll_wrap{grid-column: 1 / 13;width:100%;}
+.main_visual{width: 100%;height: 606px; position: relative;overflow: hidden;}
+.main_visual .roll_wrap{grid-column: 1 / 13;width:100%;position: absolute;}
 .main_visual .roll_wrap .roll{display: none}
 .main_visual .roll_wrap img {vertical-align: middle; width:100%;}
 .main_visual .roll_wrap .img_txt{grid-column: 1 / 13;position:absolute; bottom:60px; left:43.5%;text-align:center;}/* 메인비주얼01 텍스트 위치(상단 좌측) */
 .main_visual .roll_wrap .img_txt p{font-size:2rem;line-height:3.4rem;color:#fff;}
+.main_visual .roll_wrap .roll_txt{position: absolute;top: 4rem;color: #fff;}
 .main_visual .roll_wrap .roll_txt_2{grid-column: 1 / 13;position:absolute; top:80px;left:58%;color:#fff;}/* 메인비주얼02 텍스트 위치(상단 우측) */
 .main_visual .roll_wrap .roll_txt h2, .main_visual .roll_wrap .roll_txt_2 h2{font-size:5rem;letter-spacing: 0.2rem;margin-bottom:10px;}
 .main_visual .roll_wrap .roll_txt p, .main_visual .roll_wrap .roll_txt_2 p{font-size:2rem;line-height:3.4rem;}
 .main_visual .roll_wrap .img_txt{grid-column: 1 / 13;position:absolute; bottom:60px; left:44%;text-align:center;font-size:2rem;line-height:3.4rem;color:#fff;}/* 메인비주얼01 텍스트 위치(하단 중앙) */
 .main_visual .roll_wrap .img_txt p{font-size:2rem;line-height:3.4rem;color:#fff;}
-.main_visual .roll_wrap .btn_enrolment{margin-top:30px;width:120px; height:50px;background:#eee;color:#333;line-height:50px;border-radius: 4px;text-align:center;transition: all .2s ease-in-out;cursor: pointer;}
+.main_visual .roll_wrap .btn_enrolment{margin-top:30px;width:120px; height:50px;background:#eee;color:#333;line-height:50px;border-radius: 0.4rem;text-align:center;transition: all .2s ease-in-out;cursor: pointer;}
 .main_visual .roll_wrap .btn_enrolment:hover{background:#ddd;color:#333}
 
 /* Main_visual Area - Next & previous buttons */
@@ -132,10 +141,11 @@
 
 /* Main_service Area */
 .main_service{background-color: #f6f7fb;height: auto;}
-.main_service .con_tit .btn_all{display: block;width: 286px;height: 50px;line-height:50px;background-color: #3191e8;border-radius: 4px;color: #fff;text-align: center;margin: 0 auto 3rem;}
+.main_service .con_tit .btn_all{display: block;width: 286px;height: 50px;line-height:50px;background-color: #4196ef;border-radius: 4px;color: #fff;text-align: center;margin: 0 auto 3rem;}
+.main_service .con_tit .btn_all:hover{background-color: #0275f0;}
 .main_service .con_img, .con_txt{grid-column: span 6;margin: 3rem 0 0 ;}
 
-.main_service .con_img{border-radius: 4px;box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.27);overflow: hidden;}
+.main_service .con_img{border-radius: 0.4rem;box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.27);overflow: hidden;}
 .main_service .con_img.right{grid-column: 7 / 13;grid-row: 2 / 3;}
 
 .main_service .con_txt{display: table;padding: 0 0 0 3rem;position: relative}
@@ -144,8 +154,9 @@
 .main_service .con_txt.right::before{content: "";display: block;width: 1px;height: 48%;background: #bebebe;position: absolute;left: 100%;top: 50%;transform: translateY(-50%);}
 .main_service .con_txt .txt_wrap{display: table-cell;vertical-align: middle;}
 .main_service .con_txt .txt_wrap p{margin: 2rem 0 4rem;}
-.main_service .con_txt .txt_wrap .btn_curri{position: relative;color: #3191e8;}
-.main_service .con_txt .txt_wrap .btn_curri::before{content: "";display: block;width: 8px;height: 8px;border-bottom: 1px solid #3191e8;border-right: 1px solid #3191e8;position: absolute;right: -10px;top: 7px;transform: rotate(-45deg)}
+.main_service .con_txt .txt_wrap .btn_curri{position: relative;color: #4196ef;font-weight: 500;}
+.main_service .con_txt .txt_wrap .btn_curri:hover{color: #0275f0;}
+.main_service .con_txt .txt_wrap .btn_curri::before{content: "";display: block;width: 8px;height: 8px;border-bottom: 1px solid #4196ef;border-right: 1px solid #4196ef;position: absolute;right: -10px;top: 8px;transform: rotate(-45deg)}
 .main_service .con_txt.right .txt_wrap .btn_curri{padding: 0 1.4rem 0 0;}
 .main_service .con_txt.right .txt_wrap .btn_curri::before{right: 4px}
 
@@ -217,5 +228,5 @@
 
 
 /* Top Button */
-#btn_top{display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;font-size: 18px;border: none;outline: none;background-color: #c9341c;color: white;cursor: pointer;padding: 15px;border-radius: 4px;}
+#btn_top{display: none;position: fixed;bottom: 2rem;right: 3rem;z-index: 202;font-size: 1.8rem;border: none;outline: none;background-color: #cd201f;color: white;cursor: pointer;padding: 1.5rem;border-radius: 0.4rem;}
 #btn_top:hover{opacity: 0.75}
