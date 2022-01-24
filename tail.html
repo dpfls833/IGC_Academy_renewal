@@ -9,7 +9,7 @@
 <body>
     <div class="footer">
         <div class="footer_top">
-            <div class="con_wrap">
+            <div class="con_wrap clearfix">
                 <ul class="IGC_info">
                     <li class="no_b"><span>회사 : ㈜아이지씨인증원</span></li>
                     <li><span>대표 : Dr.공길택</span></li>
@@ -19,17 +19,15 @@
                     <li class="no_b"><span>상담전화 : 02-6749-0701</span></li>
                     <li><span>팩스 : 02-6749-0711</span></li>
                 </ul>
-                <div class="fnb_tit">관련기관 바로가기</div>
-                <ul>
-                    <!-- <li><a href="#" class="fnb_logo IPC"><img src="/theme/IGC_Academy/img/Logo_IPC.png" alt="IPC logo"></a></li>
-                    <li><a href="#" class="fnb_logo IAF"><img src="/theme/IGC_Academy/img/Logo_IAF.png" alt="IAF logo"></a></li>
-                    <li><a href="#" class="fnb_logo GPC"><img src="/theme/IGC_Academy/img/Logo_GPC.png" alt="GPC logo"></a></li> -->
-                </ul>
-            </div>
-        </div>
-        <div class="footer_btm">
-            <div class="connect">
-                <div class="con_wrap">
+                <div class="fnb_tit">
+                    <select onchange="window.open(value,'_blank');" class="sites">
+                        <option value=""> 관련사이트 </option>
+                        <option value="http://ipcaweb.org/">IPC</option>
+                        <option value="https://iaf.nu/en/home/">IAF</option>
+                        <option value="http://www.gpcert.org/">GPC인증원</option>
+                     </select>
+                </div>
+                <div class="connect">
                     <ul class="connect_icon_box clearfix">
                         <li><a href="#"><i class="fab fa-skype"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -37,17 +35,32 @@
                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="container">
-                <div class="policy_menu left">
-                    <ul class="clearfix">
-                        <li><a href="#">개인정보취급방침</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">1:1상담</a></li>
+                <div class="s_fnb">
+                    <ul class="s_fnb_box clearfix">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">교육과정</a></li>
+                        <li><a href="#">소개</a></li>
                     </ul>
                 </div>
-                <div class="policy_menu right">
-                    <div class="copy">Copyright &copy; 2021 주식회사 지피씨인증원 all rights reserved.</div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="policy">
+                <div class="con_wrap clearfix">
+                    <div class="policy_menu left">
+                        <ul class="clearfix">
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">1:1상담</a></li>
+                        </ul>
+                    </div>
+                    <div class="policy_menu middle">
+                        <img src="theme/IGC_Academy/img/Logo_IGC_Academy_footer.png" alt="IGC Academy Logo">
+                    </div>
+                    <div class="policy_menu right">
+                        <div class="copy">Copyright &copy; 2021 주식회사 지피씨인증원 all rights reserved.</div>
+                    </div>
                 </div>
             </div>
         </div>
