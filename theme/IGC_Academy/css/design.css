@@ -49,10 +49,6 @@
 .header .main_gnb .logo.gpc{width: 109px;height: 80px;}/* GPC Logo */
 
 
-
-
-
-
 /* Main_visual Area */
 .main_visual{width: 100%;height: 606px; position: relative;overflow: hidden;}
 .main_visual .roll_wrap{grid-column: 1 / 13;width:100%;position: absolute;}
@@ -139,6 +135,7 @@
 .main_LMS ul li i{color: #4196ef/*#3b95f3*/; margin:1rem 0;transition: all .3s ease-out;}
 .main_LMS ul li:hover i{color:#0275f0;}
 
+
 /* Main_service Area */
 .main_service{background-color: #f6f7fb;height: auto;}
 .main_service .con_tit .btn_all{display: block;width: 286px;height: 50px;line-height:50px;background-color: #4196ef;border-radius: 4px;color: #fff;text-align: center;margin: 0 auto 3rem;}
@@ -174,7 +171,6 @@
 .main_forum .bg{position:absolute;bottom:2rem;right:5rem;font-size:10rem; color:rgba(205,224,241,0.4);font-weight:600;}
 
 .main_forum .con_tit h3{margin: 0 0 6rem;}
-.main_forum .con_wrap{width: 100%;max-width: 1350px;margin: 0 auto;position:relative;}
 .main_forum .con_wrap li:nth-child(odd){float: left;width: calc(100% / 5 - 24px);margin: 0 15px;background-color: #fff;text-align: center;border-top: 2px solid;border-image: linear-gradient(270deg,#3ad8d8 0,#3191e8 100%);border-image-slice: 1;border-bottom:1px solid;}
 .main_forum .con_wrap li:first-child{margin: 0 15px 0 0;}
 .main_forum .con_wrap li:last-child{margin: 0 0 0 15px;}
@@ -193,9 +189,8 @@
 .main_forum .con_wrap li .arrow_right i{line-height:5rem;font-size:4.2rem;color:#bbb;}
 
 
-
 /* Footer Area */
-.footer .connect{padding: 1.5rem 0;}
+.footer .connect{padding: 1.5rem 0;border-top: 1px solid rgba(0,0,0,.1);}
 .footer .connect .con_wrap{width: 100%;max-width: 1350px;margin: 0 auto;position:relative;}
 .footer .connect_icon_box .connect_txt{color:#888;line-height: 2.8;}
 .footer .connect_icon_box li{float: left;margin-right:1.2rem;}

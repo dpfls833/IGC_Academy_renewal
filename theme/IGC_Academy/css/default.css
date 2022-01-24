@@ -80,6 +80,12 @@ table{
     height: auto;
     margin: 166px auto 0;/* 헤더영역 높이값(상단 유틸리티:46px/헤더:120px) 제외: margin 처리 */
 }
+.con_wrap{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    position:relative;
+}
 .container{
     max-width: 1350px;
     margin: 0 auto;

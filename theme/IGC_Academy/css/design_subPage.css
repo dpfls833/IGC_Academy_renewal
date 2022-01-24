@@ -1,3 +1,8 @@
 @charset "utf-8";
 
-.subPage_tit{grid-column: 1 / 13;text-align: center;padding: 6rem 0;}
+.subPage{text-align: center;padding: 6rem 0 0;}
+.subPage.tit{}
+.subPage.banner{height: 420px;overflow: hidden;padding: 0;margin: 6rem 0 0;}
+.subPage.con_box .sec01{grid-column: 1 / 5;}
+.subPage.con_box .sec02{grid-column: 5 / 9;}
+.subPage.con_box .sec03{grid-column: 9 / 13;}
