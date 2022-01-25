@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IGC Academy 회사안내 회사소개</title>
+    <title>회사소개 | IGC Academy</title>
     <!-- CSS 연결 -->
     <link rel="stylesheet" href="/theme/IGC_Academy/css/default.css">
     <link rel="stylesheet" href="/theme/IGC_Academy/css/design_subPage.css">
@@ -16,7 +16,8 @@
     <!-- Fontawesome 연결 -->
     <script src="https://kit.fontawesome.com/6968672a33.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader_bg"><div id="loader"></div></div>
     <header w3-include-html="/head.html"></header>
     <div class="contents">
         <nav>
@@ -66,6 +67,8 @@
     </div>
     <button onclick="topFunction()" id="btn_top" title="Go to top">Top</button>
     <footer w3-include-html="/tail.html"></footer>
+
+
 </body>
 <!-- script.js -->
 <script>

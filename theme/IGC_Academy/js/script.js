@@ -43,3 +43,18 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 };
 
+
+// 서브페이지 링크 이동 시 Loading 페이지 구현
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loader_bg").style.display = "none";
+}
+
+
+
