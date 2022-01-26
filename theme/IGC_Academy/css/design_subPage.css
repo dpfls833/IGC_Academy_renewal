@@ -36,3 +36,8 @@
 .subPage.con_box .sec02{grid-column: 5 / 9;}
 .subPage.con_box .sec03{grid-column: 9 / 13;}
 
+.subPage.con_box .sec dd{margin: 3rem 0;}
+.subPage.con_box .sec h5{margin: 0 0 3rem;}
+.subPage.con_box .sec .fas, .far, .fa{font-size: 6rem;color: rgba(0,0,0,.2);}
+
+
