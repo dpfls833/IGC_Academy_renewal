@@ -29,6 +29,15 @@
   }
 
 
+/* Breadcrumb Pagination */
+nav{background-color: #f0f0f0;}
+.breadcrumb {padding: 10px 0;}
+.breadcrumb li {display: inline;font-size: 1.4rem;}
+.breadcrumb li+li:before {padding: 8px;color: black;content: "/\00a0";}
+.breadcrumb li a {color: #0275d8;}
+.breadcrumb li a:hover {color: #01447e;text-decoration: underline;}
+
+
 .subPage{text-align: center;padding: 6rem 0 0;}
 .subPage.tit{}
 .subPage.banner{height: 420px;overflow: hidden;padding: 0;margin: 6rem 0 0;}
@@ -38,6 +47,6 @@
 
 .subPage.con_box .sec dd{margin: 3rem 0;}
 .subPage.con_box .sec h5{margin: 0 0 3rem;}
-.subPage.con_box .sec .fas, .far, .fa{font-size: 6rem;color: rgba(0,0,0,.2);}
+.subPage.con_box .sec .fas,.subPage.con_box .sec .far,.subPage.con_box .sec .fa{font-size: 6rem;color: rgba(0,0,0,.2);}
 
 

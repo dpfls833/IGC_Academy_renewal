@@ -1,6 +1,16 @@
 @charset "utf-8";
 
 /* Header Area */
+.overlay {height: 100%;width: 100%;display: none;position: fixed;z-index: 999999;top: 0;left: 0;background-color: rgb(0,0,0);background-color: rgba(0,0,0, 0.9);} 
+.overlay-content {position: relative;top: 50%;width: 30%;text-align: center;margin-top: 30px;margin: auto;}
+.overlay .closebtn {position: absolute;top: 20px;right: 45px;font-size: 60px;cursor: pointer;color: white;}
+.overlay .closebtn:hover {color: #ccc;}
+.overlay input[type=text] {padding: 15px;font-size: 17px;border: none;float: left;width: 80%;background: white;}
+.overlay input[type=text]:hover {background: #f1f1f1;}
+.overlay button {float: left;width: 20%;padding: 15px;background: #ddd;font-size: 17px;border: none;cursor: pointer;}
+.overlay button:hover {background: #bbb;}
+
+
 .top_util{position: fixed;top: 0;width: 100%;height: auto;line-height: 44px;background:#fff;border-bottom: 1px solid rgba(0,0,0,0.2);z-index: 202;}/* 헤더영역 상단 유틸리티 */
 .top_util .container{gap:0;}
 .top_util .contact{grid-column: 7 / 11;margin: 0 0 0 4rem;background:#4196ef;color:#fff}
@@ -225,82 +235,3 @@
 /* Top Button */
 #btn_top{display: none;position: fixed;bottom: 2rem;right: 3rem;z-index: 202;font-size: 1.8rem;border: none;outline: none;background-color: #cd201f;color: white;cursor: pointer;padding: 1.5rem;border-radius: 0.4rem;}
 #btn_top:hover{opacity: 0.75}
-
-
-/* Login Page */
-.login_wrap {
-    width: 350px;
-    height: 460px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    background-color: #fff;
-    border: 1px solid #DBDBDB;
-}
-.login_wrap .logo {
-    align-self: center;
-    width: 175px;
-    margin: 35px 0;
-    overflow: hidden;
-    cursor: pointer;
-}
-.login_wrap .logo img{
-    width: 100%;
-    height: auto;
-}
-.login_wrap .input_login {
-    width: 270px;
-    height: 40px;
-    margin: 3px auto;
-    padding: 0 10px;
-    display: block;
-    background-color: #fafafa;
-    border: 1px solid #DBDBDB;
-    border-radius: 3px;
-    font-size: 14px;
-}
-.login_wrap .input_login::placeholder {
-    font-size: 12px;
-    color: #8e8e8e;    
-}
-.login_wrap .input_login:focus {
-    border: 1px solid #8a8a8a;
-    outline: none;
-}
-.login_wrap #btn_login {
-    width: 268px;
-    height: 30px;
-    margin: 13px auto;
-    background-color: #0095f6;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-}
-.login_wrap #btn_login:disabled {
-    background-color: #B9DFFC;
-}
-.login_wrap #btn_login:disabled:hover {
-    cursor: default;
-}
-.login_wrap #btn_login:enabled:hover {
-    cursor: pointer;
-}
-.login_wrap #btn_login:focus {
-    outline: none;
-}
-.login_wrap a {
-    cursor: default;
-}
-.login_wrap .button_forgot {
-    color : #00366B;
-    align-self: center;
-    font-size: 12px;
-    margin-top: 70px;
-}
-.login_wrap .button_forgot:hover {
-    cursor: pointer;
-}

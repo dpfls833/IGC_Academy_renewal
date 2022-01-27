@@ -7,6 +7,15 @@
     <title>IGC Academy</title>
 </head>
 <body>
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+    </div>
     <div class="top_util">
         <div class="container">
             <ul class="contact">
@@ -57,7 +66,7 @@
             </div>
             <div class="util">
                 <ul>
-                    <li><a href="#" class="btn_search" title="검색"><i class="material-icons">search</i></a></li>
+                    <li><a href="javascript:;" class="btn_search" title="검색" onclick="openSearch()"><i class="material-icons">search</i></a></li>
                     <li><a href="/login.html" class="btn_user" title="로그인"><i class="material-icons">lock</i></a></li>
                     <li>
                         <i class="material-icons">public</i>

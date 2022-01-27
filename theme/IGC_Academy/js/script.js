@@ -49,12 +49,19 @@ var myVar;
 
 function myFunction() {
   myVar = setTimeout(showPage, 2000);
-}
+};
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loader_bg").style.display = "none";
-}
+};
 
 
+// 검색 버튼 클릭 시 Overlay 생성
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+};
 
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+};
