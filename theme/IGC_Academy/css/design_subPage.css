@@ -1,3 +1,52 @@
 @charset "utf-8";
 
-.subPage_tit{grid-column: 1 / 13;text-align: center;padding: 6rem 0;}
+/* Loading 페이지 */
+#loader_bg{position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: block;background-color: rgb(35, 156, 255);z-index: 999999;}
+
+#loader_bg > #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+/* Breadcrumb Pagination */
+nav{background-color: #f0f0f0;}
+.breadcrumb {padding: 10px 0;}
+.breadcrumb li {display: inline;font-size: 1.4rem;}
+.breadcrumb li+li:before {padding: 8px;color: black;content: "/\00a0";}
+.breadcrumb li a {color: #0275d8;}
+.breadcrumb li a:hover {color: #01447e;text-decoration: underline;}
+
+
+.subPage{text-align: center;padding: 6rem 0 0;}
+.subPage.tit{}
+.subPage.banner{height: 420px;overflow: hidden;padding: 0;margin: 6rem 0 0;}
+.subPage.con_box .sec01{grid-column: 1 / 5;}
+.subPage.con_box .sec02{grid-column: 5 / 9;}
+.subPage.con_box .sec03{grid-column: 9 / 13;}
+
+.subPage.con_box .sec dd{margin: 3rem 0;}
+.subPage.con_box .sec h5{margin: 0 0 3rem;}
+.subPage.con_box .sec .fas,.subPage.con_box .sec .far,.subPage.con_box .sec .fa{font-size: 6rem;color: rgba(0,0,0,.2);}
+
+
