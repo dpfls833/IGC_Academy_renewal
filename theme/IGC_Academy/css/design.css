@@ -212,7 +212,7 @@
 /* Footer Area */
 .footer .con_wrap{width: 100%;max-width: 1350px;margin: 0 auto;position:relative;}
 
-.footer .footer_top{background-color: #535d68;color: #fff;font-weight: 300;padding: 6rem 0 4rem;}
+.footer .footer_top{background-color: #535d68;color: #fff;font-weight: 300;padding: 6rem 0 4rem;font-size:1.4rem;}
 .footer .footer_top .IGC_info{float: left;width:60%;}
 .footer .footer_top .IGC_info li{display:inline-block;position: relative; padding-right:2rem;}
 .footer .footer_top .IGC_info li:not(.no_b)::after{content: "";position: absolute;left: -1rem;top: 55%;width: 1px;height: 10px;background: #aaaaaa;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
@@ -231,7 +231,7 @@
 .footer .footer_top .s_fnb .s_fnb_box{text-align:right;}
 .footer .footer_top .s_fnb .s_fnb_box li{float: right;padding-left:2rem;}
 
-.footer .footer_btm{background-color: #535d68;color: #fff;font-weight: 300;}
+.footer .footer_btm{background-color: #535d68;color: #fff;font-weight: 300;font-size:1.4rem;}
 .footer .footer_btm .policy{color:#dee2e7;}
 .footer .footer_btm .policy .con_wrap{border-top:1px solid  rgba(255, 255, 255,0.4); padding:4rem 0;}
 .footer .footer_btm .policy_menu ul li{float: left;padding: 2rem 4rem 0 0;}
